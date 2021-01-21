@@ -11,5 +11,6 @@ SRC_URI="https://github.com/Dr-Noob/cpufetch/archive/v0.94.tar.gz"
 KEYWORDS="~amd64 ~x86"
 
 src_install() {
+	mkdir -p "${D}/usr/bin" || die
 	emake PREFIX="${D}" BINDIR="${D}/usr/bin" install
 }
