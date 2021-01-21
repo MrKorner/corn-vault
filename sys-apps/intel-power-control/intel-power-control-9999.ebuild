@@ -2,12 +2,20 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="7"
-KEYWORDS="~amd64 ~x86"
 HOMEPAGE="https://github.com/jmechnich/intel-power-control"
 DESCRIPTION="GPU power management for Intel hardware on Linux"
-KEYWORDS="~amd64 ~x86"
-SRC_URI="https://github.com/jmechnich/intel-power-control.git"
-LICENSE="GPL-2+"
+
+if [[ "${PV}" == "9999" ]]
+then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/jmechnich/intel-power-control.git"
+	EGIT_BRANCH="master"
+else
+	SRC_URI="https://github.com/jmechnich/intel-power-control.git"
+	KEYWORDS="~amd64 ~x86"
+fi
+
+LICENSE="all-rights-reserved"
 SLOT="0"
 RDEPEND="${DEPEND}"
 DEPEND="dev-python/sip
