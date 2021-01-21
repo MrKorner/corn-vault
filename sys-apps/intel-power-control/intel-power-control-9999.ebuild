@@ -8,7 +8,7 @@ DESCRIPTION="GPU power management for Intel hardware on Linux"
 if [[ "${PV}" == "9999" ]]
 then
 	inherit git-r3
-	EGIT_REPO_URI="https://github.com/jmechnich/intel-power-control.git"
+	EGIT_REPO_URI="https://github.com/jmechnich/intel-power-control"
 	EGIT_BRANCH="master"
 else
 	SRC_URI="https://github.com/jmechnich/intel-power-control.git"
