@@ -12,5 +12,5 @@ KEYWORDS="~amd64 ~x86"
 
 src_install() {
 	mkdir -p "${D}/usr/bin" || die
-	emake PREFIX="${D}" BINDIR="${D}/usr/bin" install
+	emake PREFIX="${D}" BINDIR="${D}/usr/bin" DATA="cpufetch" install
 }
