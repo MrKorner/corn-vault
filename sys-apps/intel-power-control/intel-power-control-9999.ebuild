@@ -22,7 +22,6 @@ DEPEND="dev-python/sip
 	dev-qt/qtcore"
 
 src_compile() {
-	use sparc && filter-flags -fomit-frame-pointer
 	emake
 }
 
