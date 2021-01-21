@@ -22,10 +22,12 @@ DEPEND="dev-python/sip
 	dev-qt/qtcore"
 
 src_compile() {
-	emake
+	emake -j1
 }
 
 src_install() {
-	emake install
+	mkdir -p "${D}/usr/bin" || die
+	emake PREFIX="${D}" BINDIR="${D}/usr/bin" DATA="intel-power-control.png" install
 	domenu files/intel-power-control.desktop
+	newicon intel-power-control.png
 }
