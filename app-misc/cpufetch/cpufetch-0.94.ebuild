@@ -1,7 +1,7 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI="7"
 
 HOMEPAGE="https://github.com/Dr-Noob/cpufetch"
 DESCRIPTION="Simplistic yet fancy CPU architecture fetching tool"
@@ -11,6 +11,6 @@ SRC_URI="https://github.com/Dr-Noob/cpufetch/archive/v0.94.tar.gz"
 KEYWORDS="~amd64 ~x86"
 
 src_install() {
-	mkdir -p "${D}/usr/bin" || die
-	emake PREFIX="${D}" BINDIR="${D}/usr/bin" DATA="cpufetch" install
+	mkdir -p "${D}/usr" || die
+	emake PREFIX="${D}" BINDIR="${D}/bin" DATA="cpufetch" install
 }
