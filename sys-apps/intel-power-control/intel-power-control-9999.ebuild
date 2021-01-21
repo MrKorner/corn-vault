@@ -21,13 +21,8 @@ RDEPEND="${DEPEND}"
 DEPEND="dev-python/sip
 	dev-qt/qtcore"
 
-src_compile() {
-	emake -j1
-}
-
 src_install() {
 	mkdir -p "${D}/usr/bin" || die
 	emake PREFIX="${D}" BINDIR="${D}/usr/bin" DATA="intel-power-control.png" install
-	domenu files/intel-power-control.desktop
-	newicon intel-power-control.png
+	make_desktop_entry intel-power-control Intel-Power-Control /usr/share/intel-power-control.png Utility
 }
