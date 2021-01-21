@@ -23,8 +23,6 @@ DEPEND="dev-python/sip
 
 src_compile() {
 	use sparc && filter-flags -fomit-frame-pointer
-	append-ldflags -Wl,-z,now
-
 	emake
 }
 
