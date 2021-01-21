@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="6"
@@ -10,6 +10,11 @@ K_SECURITY_UNSUPPORTED="1"
 inherit kernel-2
 detect_version
 detect_arch
+
+RDEPEND="${DEPEND}"
+DEPEND="sys-devel/bison
+	sys-devel/flex
+	virtual/pkgconfig"
 
 KEYWORDS="~amd64 ~x86"
 HOMEPAGE="https://dev.gentoo.org/~mpagano/genpatches/
