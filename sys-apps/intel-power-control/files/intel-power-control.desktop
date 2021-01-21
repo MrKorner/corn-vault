@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Intel-power-control
+Exec=intel-power-control
+Terminal=false
+
