@@ -10,7 +10,7 @@ LICENSE="MIT"
 SRC_URI="https://github.com/Dr-Noob/cpufetch/archive/v0.94.tar.gz"
 KEYWORDS="~amd64 ~x86"
 
-src_install() {
-	mkdir -p "${D}/usr" || die
-	emake PREFIX="${D}" BINDIR="${D}/bin" DATA="cpufetch" install
+src_compile() {
+	dobin cpufetch 
+	doman cpufetch.8
 }
