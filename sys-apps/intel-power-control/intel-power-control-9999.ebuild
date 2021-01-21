@@ -22,12 +22,10 @@ DEPEND="dev-python/sip
 	dev-qt/qtcore"
 
 src_compile() {
-	use sparc && filter-flags -fomit-frame-pointer
 	emake
 }
 
 src_install() {
 	emake install
 	domenu files/intel-power-control.desktop
-	newicon intel-power-control.png
 }
