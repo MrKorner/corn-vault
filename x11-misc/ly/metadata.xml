@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>none@email.com</email>
+    <name>Korner</name>
+  </maintainer>
+  <upstream>
+    <remote-id type="github">nullgemm/ly</remote-id>
+  </upstream>
+</pkgmetadata>
