@@ -21,5 +21,6 @@ DEPEND=""
 
 src_install() {
 	mkdir -p "${D}/usr/bin" || die
+    make github
 	emake PREFIX="${D}" BINDIR="${D}/usr/bin"  install
 }
