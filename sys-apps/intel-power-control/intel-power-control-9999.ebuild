@@ -19,8 +19,7 @@ LICENSE="all-rights-reserved"
 SLOT="0"
 RDEPEND="${DEPEND}"
 DEPEND="dev-python/sip
-	dev-qt/qtcore
-	dev-python/PyQt5"
+	dev-qt/qtcore"
 
 src_install() {
 	mkdir -p "${D}/usr/bin" || die
