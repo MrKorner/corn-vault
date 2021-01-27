@@ -13,7 +13,8 @@ inherit cmake desktop xdg
 DEPEND="
 	dev-qt/qtcore
 	dev-qt/linguist-tools
-	dev-qt/qtsvg"
+	dev-qt/qtsvg"	
+
 S=""${WORKDIR}"/Heimer-"${PV}""
 
 src_prepare() {
