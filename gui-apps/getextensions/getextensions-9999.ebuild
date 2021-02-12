@@ -12,7 +12,7 @@ then
 	EGIT_BRANCH="master"
 else
 	SRC_URI="https://github.com/ekistece/GetExtensions.git"
-	 KEYWORDS="~amd64 ~arm ~arm64 ~x86"
+    KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 fi
 
 LICENSE="all-rights-reserved"
