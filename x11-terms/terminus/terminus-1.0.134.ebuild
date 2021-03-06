@@ -22,4 +22,5 @@ src_install() {
         doins -r "${S}"/*
         dosym /opt/"${PN}"/terminus /usr/bin/terminus
         fperms +x /opt/"${PN}"/terminus
+        make_desktop_entry /opt/terminus/terminus terminus
 }
