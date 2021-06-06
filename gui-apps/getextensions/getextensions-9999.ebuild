@@ -4,7 +4,7 @@
 EAPI="7"
 HOMEPAGE="https://github.com/ekistece/GetExtensions"
 DESCRIPTION="Python GTK app to install extensions from extensions.gnome.org"
-PYTHON_COMPAT=( python3_7 )
+PYTHON_COMPAT=( python3_9 )
 if [[ "${PV}" == "9999" ]]
 then
 	inherit git-r3 xdg desktop distutils-r1
